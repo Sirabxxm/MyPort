@@ -1,0 +1,495 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+/*-------------------body--------------------*/
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 30px 0;
+    transition: all 0.3s ease;
+}
+.navbar.sticky{
+    padding: 15px 0;
+    background: #ff004f;
+    
+}
+.navbar .max-width{
+   display: flex;
+   align-items: center; 
+   justify-content: space-between;
+}
+.navbar .logo a{
+    color: #fff;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky .logo a span{
+    color: #fff;
+    
+}
+
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color: #fff;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 40px;
+    position: relative;
+}
+.navbar .menu li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+.navbar .menu li a:hover::after{
+    width: 100%;
+}
+
+.navbar.sticky .menu li a:hover{
+    color: #fff;
+}
+
+
+
+.home{
+    display: flex;
+    background: url("images/1325121.png") no-repeat center;
+    background-size: 100%;
+    height: 100vh;
+    color: #fff;
+    min-height: 500px;
+}
+
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.home .home-content .text-1{
+    font-size: 27px;
+
+}
+.home .home-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    margin-left: -3px;
+}
+.home .home-content .text-3{
+    font-size: 27px;
+    margin: 5px 0;
+    
+}
+
+section{
+    padding: 100px 0;
+}
+section .title{
+    position: relative;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 500;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+section .title::before{
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #ff004f;
+    transform: translateX(-50%); 
+}
+section .title::after{
+    
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 20px;
+    color: #ff004f;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%); 
+}
+.about .about-content,
+.skills .skills-content,
+.contact .contact-content,
+.skills1 .skills-content,
+.education .education-content{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/*--------------------------------*/
+.about .title::after{
+    content: "Who I am";
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+   font-size: 25px;
+   font-weight: 600;
+   margin-bottom: 10px;
+}
+
+.about .about-content .right .text span{
+    color: #111;
+}
+
+.about .about-content .right p{
+    text-align: justify;
+}
+
+
+/*contact*/
+
+
+.skills .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills .skills-content .left p{
+    text-align: justify;
+}
+
+
+.skills .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .right .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff004f;
+}
+
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .javascript::before{
+    width: 60%;
+}
+.skills-content .right .cc::before{
+    width: 70%;
+}
+.skills-content .right .c::before{
+    width: 60%;
+}
+
+.imagecss{
+    height: 200px;
+    margin: 20px;
+}
+.imagehtml{
+    height: 200px;
+    margin: 20px;
+}
+.imagejava{
+    height: 200px;
+    margin: 20px;
+}
+
+/*contact*/
+.con-logo{
+    width: 70px;
+    height:  70px;
+    margin-left: 300px;
+    margin-bottom: 25px;
+}
+.head{
+    font-size: 30px;
+    font-weight: 400;
+    margin: 15px;
+    margin-left: 70px;
+}
+.sub-head{
+    font-size: 20px;
+    margin-left: 90px;
+    margin-bottom: 20px;
+}
+.con-logo2{
+    margin-top: 10px;
+    width: 70px;
+    height:  55px;
+    margin-left: 300px;
+}
+
+/*button*/
+
+.container {
+    position: relative;
+    width: 300px; /* Adjust the width as needed */
+    height: 200px; /* Adjust the height as needed */
+    background-color: #ffffff;
+    margin: 0 auto; /* Center the container horizontally */
+  }
+
+  /* CSS styles for the button */
+  .my-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px; /* Adjust the right value to position the button */
+    padding: 15px 30px; /* Adjust the padding to make the button bigger */
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  /* Hover effect for the button */
+  .my-button:hover {
+    background-color: #0056b3;
+  }
+
+  /* CSS styles for the text box (pop-up) */
+  .text-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px; /* Adjust the width as needed */
+    height: 300px; /* Adjust the height as needed */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    display: none;
+    font-size: 16px;
+    overflow: auto;
+    line-height: 1.4;
+    color: #333;
+  }
+/* CSS styles for the text box (pop-up) */
+.text-box {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px; /* Adjust the width as needed */
+  height: 300px; /* Adjust the height as needed */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  background-color: #f7f7f7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: none;
+  font-size: 16px;
+  overflow: auto;
+  line-height: 1.4;
+  color: #333;
+}
+
+/*skill1*/
+.skills1{
+   
+    display: flex;
+    background-color: #ffffff;
+    background-size: 100%;
+    height: 100vh;
+    color: #000000;
+    min-height: 500px;
+}
+.skills1 .skills-content .column{
+    width: calc(50% - 30px);
+}
+
+.skills1 .skills-content .left .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.skills1 .skills-content .left p{
+    text-align: justify;
+}
+
+
+.skills1 .skills-content .right .bars{
+    margin-bottom: 15px;
+}
+.skills1 .skills-content .right .info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills1 .skills-content .right .span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills1 .skills-content .right .line{
+    height: 5px;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+.skills1 .skills-content .right .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: #ff004f;
+}
+
+.skills-content .right .html::before{
+    width: 80%;
+}
+.skills-content .right .css::before{
+    width: 80%;
+}
+.skills-content .right .javascript::before{
+    width: 60%;
+}
+.skills-content .right .cc::before{
+    width: 70%;
+}
+.skills-content .right .c::before{
+    width: 60%;
+}
+/*footer*/
+.footer {
+    background-color: #000000;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+
+/*edu*/
+.education-item {
+    width: 35%; /* Each box should occupy 50% of the width (two boxes in a row) */
+    margin-top: 50px;
+    color: #000000;
+   
+}
+
+.education .education-content .education-item {
+    background-color: #ffffff;
+    border: 1px solid #000000;
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s;
+    position: relative;
+    display: inline-block; /* Display boxes inline to make them appear side by side */
+}
+
+.education .education-content .education-item:nth-child(odd) {
+    margin-right: 20px; /* Add right margin to odd-numbered items to create spacing */
+}
+
+.education .education-content .education-item:hover {
+    background-color: #cdcdcd;
+}
+
+.toggle-details-btn {
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-top: 20px; /* Increase margin-top for spacing */
+    border-radius: 20px;
+}
+
+.toggle-details-btn:hover {
+    background-color: #d4004c;
+}
+
+.details {
+    display: none;
+    margin-top: 20px;
+}
+
+.show-details .toggle-details-btn {
+    background-color: #0091ea; /* Change button color when expanded */
+}
+
+.show-details .toggle-details-btn:hover {
+    background-color: #0078c2; /* Change hover color when expanded */
+}
+
+.sun{
+    margin-left: 50px;
+}
+
+.kmutt{
+    height: 300px;
+    width: 300px;
+    margin-left: 20px;
+}
+
+
+
+  
+
